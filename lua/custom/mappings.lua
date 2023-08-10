@@ -70,8 +70,9 @@ M.common = {
 
     -- ["<leader>Y"] = { "\"+Y", "Yank to clipboard", },
 
-    ["<C-f>"] = { "<cmd>NvimTreeFindFileToggle<CR>", "<->", },
-    ["<C-n>"] = { "<cmd>NvimTreeToggle<CR>", "<->", },
+    ["<C-f>"] = { "<cmd>NvimTreeToggle<CR>", "<->", },
+    ["<C-n>"] = { "<cmd>bn<CR>", "<->", },
+    ["<C-p>"] = { "<cmd>bp<CR>", "<->", },
 
     ["<C-C>"] = { "<Esc>", "<->", },
     ["<C-z>"] = { "<Esc>", "<->", },

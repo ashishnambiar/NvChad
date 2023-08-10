@@ -4,6 +4,7 @@ local plugins = {
     opts = {
       ensure_installed = {
         "gopls",
+        "dartls",
       },
     },
   },
@@ -51,6 +52,18 @@ local plugins = {
     config = function()
       require("custom.configs.flutter-tools")
     end,
+  },
+  {
+    "nvim-telescope/telescope.nvim",
+    dependencies = {
+      'nvim-lua/plenary.nvim',
+    },
+    config = function()
+      require("custom.configs.telescope")
+    end,
+  },
+  {
+    "ThePrimeagen/harpoon",
   },
 }
 return plugins
